@@ -13,7 +13,7 @@ app.use(async (ctx, next) => {
   await next()
 })
 
-app.use(serve(__dirname + '/build'));
+app.use(serve(__dirname + '/dist'));
 
 app.listen(PORT)
 console.log(`listening on port ${PORT}`)

@@ -9,6 +9,7 @@
   "scripts": {
     "test": "NODE_ENV=test jest",
     "build": "preact build --no-prerender --clean --template src/index.ejs --service-worker false",
+    "build:core-min": "microbundle build --raw -f iife src/index.js -o dist/preact.min.js",
     "serve": "preact serve",
     "dev": "preact watch --template src/index.ejs",
     "dist": "microbundle --entry src/components/hello-world/index.js",
